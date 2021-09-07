@@ -1,0 +1,14 @@
+kind: Service
+apiVersion: v1
+metadata:
+  name: minio-svc
+  labels:
+    app: minio
+spec:
+  selector:
+    app: minio
+  clusterIP: None
+  publishNotReadyAddresses: true
+  ports:
+    - name: http
+      port: 9000
