@@ -1,0 +1,1 @@
+# minio-distributed-k8s
